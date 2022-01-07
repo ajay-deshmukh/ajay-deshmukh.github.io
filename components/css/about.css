@@ -1,0 +1,61 @@
+/* ------------------------ MAIN ABOUT ----------------------- */
+
+body {
+  overflow-x: hidden;
+  background-color: #dbffab;
+  font-family: sans-serif, "Gill Sans MT", "Calibri", "Constantia", "Consolas";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.about {
+  max-width: 1000px;
+  text-align: center;
+  margin: auto;
+}
+
+.aboutheading {
+  font-size: 42px;
+  color: darkslategrey;
+}
+
+.aboutsubheading {
+  font-size: 28px;
+  font-weight: bold;
+  color: darkslategrey;
+}
+
+summary {
+  font-size: 22px;
+  padding: 5px;
+}
+
+.paragraph a{
+  color: black;
+}
+
+.paragraph u:hover {
+  color: #eb3326;
+}
+
+.paragraph code {
+  color: red;
+}
+
+.paragraph span {
+  color: #5e4f4e;
+}
+
+.paragraph #no-line {
+  color: #eb3326;
+  text-decoration: none;
+}
+
+/* Responsive css  */
+@media only screen and (max-width: 720px) {
+  .aboutheading p {
+    padding-top: 48px;
+  }
+}

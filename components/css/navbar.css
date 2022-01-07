@@ -1,0 +1,93 @@
+/* ------------------------ MAIN NAVBAR ----------------------- */
+
+header {
+    margin: 0;
+    padding: 0;
+    background-color: ;
+    font-family:  sans-serif;
+    text-decoration: none;
+}
+
+header, .navbar, .menubar {
+    display: flex;
+    justify-content: safe right;
+}
+
+.navbar {
+    position: absolute;
+    background-color: ghostwhite;
+    padding: 20px;
+    transition: 0.5s;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 8px 15px #9AA88A;
+}
+
+.menubar {
+    margin: 0;
+    padding: 0px;
+    width: 0;
+    align-content: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.navbar input:checked ~ .menubar {
+    width: 420px;
+}
+
+.menubar li {
+    list-style: none;
+    margin: 0px 10px;
+    padding: 4px 4px;
+}
+
+.menubar li a {
+    text-decoration: none;
+    color: #666;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.menubar li a:hover {
+    color: #161919;
+}
+
+.navbar input {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.navbar span {
+    position: absolute;
+    left: 30px;
+    width: 30px;
+    height: 4px;
+    border-radius: 50px;
+    background-color: darkslategrey;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.navbar input:checked ~ span {
+    background-color: orangered;
+}
+
+.navbar span:nth-child(2) {
+    transform: translateY(-8px);
+}
+
+.navbar input:checked ~ span:nth-child(2) {
+    transform: translateY(0) rotate(-45deg);
+}
+.navbar span:nth-child(3) {
+    transform: translateY(8px);
+}
+
+.navbar input:checked ~ span:nth-child(3) {
+    transform: translateY(0) rotate(45deg);
+}

@@ -1,0 +1,117 @@
+/* ------------------------ MAIN PROJECT ----------------------- */
+
+body {
+  overflow-x: hidden;
+  background-color: #dbffab;
+  font-family: sans-serif, "Gill Sans MT", "Calibri", "Constantia", "Consolas";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* Center website */
+.main {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.name p {
+  font-size: 50px;
+  color: darkslategrey;
+  word-break: break-all;
+}
+
+
+hr {
+  border-top: 3px solid darkslategrey;
+}
+
+.row {
+  margin: 8px -16px;
+  border-radius: 12px;
+}
+
+
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.projectcards {
+  background-color: whitesmoke;
+  border-radius: 5px;
+  border-style: groove; 
+  text-align: center;
+  padding: 10px;
+}
+
+.projectcards:hover {
+  box-shadow: 0 9px 15px #9AA88A;
+}
+
+.projectcards hr {
+  border-top: 2px solid darkslateblue;
+  padding: 0px;
+}
+
+.projectcards h3 {
+  color: darkslategrey;
+  font-size: 24px;
+  padding: 0px;
+}
+.projectcards p {
+  background-color: lightblue;
+  border-radius: 2px;
+  font-style: oblique;
+  padding: 4px;
+}
+
+.projectbutton button {
+  padding: 10px 18px;
+  border-radius: 20px;
+  border-color: #2d4c4f;
+  border-style: ridge;
+  font-size: 18px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.projectbutton button:hover{
+  color: skyblue;
+  background-color: ;
+}
+
+
+/* Responsive layout */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .name p {
+    padding-top: 36px;
+  }
+}
+
+/* Makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
