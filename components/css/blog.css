@@ -19,6 +19,7 @@ hr {
 .blogheading {
   font-size: 42px;
   color: darkslategrey;
+  padding-top: 48px;
   padding-bottom: 0px;
   border: 0px;
 }
@@ -86,6 +87,6 @@ hr {
 /* Responsive css  */
 @media only screen and (max-width: 720px) {
   .blogheading p {
-    padding-top: 48px;
+    padding-top: 54px;
   }
 }

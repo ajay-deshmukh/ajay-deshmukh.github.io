@@ -21,6 +21,7 @@ body {
   font-size: 50px;
   color: darkslategrey;
   word-break: break-all;
+  padding-top: 48px;
 }
 
 
@@ -105,7 +106,7 @@ hr {
 
 @media only screen and (max-width: 720px) {
   .name p {
-    padding-top: 36px;
+    padding-top: 54px;
   }
 }
 
