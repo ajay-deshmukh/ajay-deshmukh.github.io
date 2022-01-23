@@ -64,8 +64,9 @@ header, .navbar, .menubar {
 
 .navbar span {
     position: absolute;
-    left: 30px;
+    left: 26px;
     width: 30px;
+    bottom: 45px;
     height: 4px;
     border-radius: 50px;
     background-color: darkslategrey;
@@ -90,4 +91,26 @@ header, .navbar, .menubar {
 
 .navbar input:checked ~ span:nth-child(3) {
     transform: translateY(0) rotate(45deg);
+}
+
+/* Responsive style */
+@media only screen and (max-width: 640px) {
+
+.menubar li a {
+    font-weight: 600;
+    font-size: 16px;
+    transition: 0.5s;
+}
+    .navbar {
+
+    }
+    .navbar input:checked ~ .menubar {
+    width: 300px;
+}
+    .menubar li {
+    list-style: none;
+    margin: 0px 5px;
+    padding: 1px 1px;
+}
+
 }
