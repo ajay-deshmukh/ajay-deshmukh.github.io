@@ -98,11 +98,11 @@ header, .navbar, .menubar {
 
 .menubar li a {
     font-weight: 600;
-    font-size: 18px;
+    font-size: 14px;
     transition: 0.5s;
 }
     .navbar input:checked ~ .menubar {
-    width: 300px;
+    width: 250px;
 }
     .menubar li {
     list-style: none;
