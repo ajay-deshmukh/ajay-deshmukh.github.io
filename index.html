@@ -1,75 +1,417 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" href="./assets/icon.png">
+	<title>Ajay Deshmukh's portfolio</title>
+	<link rel="icon" href="icons/favicon.png">
 
-	<!-- COMPONENTS CSS -->
-	<link rel="stylesheet" type="text/css" href="./components/css/navbar.css">
-	<link rel="stylesheet" type="text/css" href="./components/css/index.css">
-	<link rel="stylesheet" type="text/css" href="./components/css/footer.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-		
-	<title>Home - Ajay Deshmukh</title>
+	    <meta name="author" content="Ajay Deshmukh">
+	    <meta name="description" content="Ajay Deshmukh's personal portfolio. An overview of Ajay's work history, education history, personal projects and technical skills.">
+	    <meta name="keywords" content="Ajay,Deshmukh,Portfolio,Personal">
+	    <meta property="og:title" content="Ajay Deshmukh's Portfolio">
+	    <meta property="og:description" content="Ajay Deshmukh's Personal Website. An overview of Ajay's education history, work history, personal projects and technical skills.">
+	    <meta property="og:image" content="images/ajay.jpeg">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="icons/fontawesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
+
 </head>
+
+
 <body>
-
-<!--------- HEADER NAVIGATION BAR ------------->
-<header>
-	<div class="navbar">
-	  <input type="checkbox">
-	    <span></span>
-	    <span></span>
-	    <div class="menubar">
-	      <li><a href="index.html">Home</a></li>
-	      <li><a href="about.html">About</a></li>
-	      <li><a href="project.html">Projects</a></li>
-	      <li><a href="blog.html">Blog</a></li>
-	    </div>
-	</div>
-</header>
-
-<!--------- MAIN HOME ------------->
-<main class="home-container">
-	<div class="main">
-		<div class="name">
-			<p>
-			<div class="textwrapper">
-				<a href="" class="typewrite" 
-					  data-period="2000" 
-					  data-type='[ "Hi ! I am Ajay, love to join at tech.", 
-					  "I love to create new things.", "See, Css does not scare me.", 
-					  "Let us connect, I am looking for an opportunity.", 
-					  "I enjoy learning the stuffs from YouTube.",
-					  "Thank you for visiting to my website 🙂." ]'>
-				    <span class="wrap"></span>
-				</a>
-			</div>
-			</p>
-			<p>
-				<div class="FirstName">Ajay
-				<div class="LastName">Deshmukh</div>
+		<div class="container-fluid">
+			<div class="row" id="landing-container">
+				<!-- <div id="landing-overlay"></div> -->
+				<div class="container landing-content" id="landing-header">
+					<h1 id="heading-name">Ajay Deshmukh</h1>
+					<h3 id="heading-title">
+						<br>
+						B.Tech IT, SGGSIE&T Nanded <br>
+						Cyberscurity - Winter Intern, SISTRM Australia
+					</h3>
 				</div>
-			</p>
+				<div class="container landing-content" id="landing-footer">
+					<div class="row"><span class="find-out" id="find-out-text">Learn more</span></div>
+					<div class="row"><i class="fas fa-chevron-down" id="landing-chevron"></i></div>
+				</div>
+			</div>
+			<div class="row" id="details-container">
+				<div class="col-2">
+					<div class="sticky-top" id="side-nav">
+						<div class="row side-nav-picture">
+							<img class="avatar" src="images/ajay.jpeg">
+							<h2>Ajay Deshmukh</h2>
+						</div>
+						<a href="#about">
+							<div class="row side-nav-element">
+								<div class="row">
+									<div class="col-3"><i class="fas fa-user"></i></div>
+									<div class="col">About</div>
+								</div>
+								<div class="row">
+									<div class="underbar"></div>
+								</div>
+							</div>
+						</a>
+
+						<!---- Experience Section  ----->
+						<a href="#experience">
+							<div class="row side-nav-element">
+								<div class="row">
+									<div class="col-3"><i class="fas fa-briefcase"></i></div>
+									<div class="col">Experience</div>
+								</div>
+								<div class="row">
+									<div class="underbar"></div>
+								</div>
+							</div>
+						</a>
+
+						<!---- Education Section  ----->
+						<a href="#education">
+							<div class="row side-nav-element">
+								<div class="row">
+									<div class="col-3"><i class="fas fa-graduation-cap"></i></div>
+									<div class="col">Education</div>
+								</div>
+								<div class="row">
+									<div class="underbar"></div>
+								</div>
+							</div>
+						</a>
+
+						<!---- Projects Section  ----->
+				<!------ <a href="#projects">
+							<div class="row side-nav-element">
+								<div class="row">
+									<div class="col-3"><i class="fas fa-laptop-code"></i></div>
+									<div class="col">Projects</div>
+								</div>
+								<div class="row">
+									<div class="underbar"></div>
+								</div>
+							</div>
+						</a> 
+				------------->
+
+						<!---- Skills Section  ----->
+						<a href="#skills">
+							<div class="row side-nav-element">
+								<div class="row">
+									<div class="col-3"><i class="fas fa-chart-bar"></i></div>
+									<div class="col">Skills</div>
+								</div>
+								<div class="row">
+									<div class="underbar"></div>
+								</div>
+							</div>
+						</a>
+
+						<!---- Achievement Section  ----->
+						<a href="#achievements">
+							<div class="row side-nav-element">
+								<div class="row">
+									<div class="col-3"><i class="fas fa-trophy"></i></div>
+									<div class="col">Achievements</div>
+								</div>
+								<div class="row">
+									<div class="underbar"></div>
+								</div>
+							</div>
+						</a>
+
+						<!---- ACTIVELY LOOKING FOR "on both side"  ----->
+						<div class="row justify-content-center" id="resume-container">
+							<p id="internship-nav"><b>Actively looking for Fall'22 internship </b></p>
+						</div>
+						<div class="row justify-content-center" id="contact-icons-container">
+							<div class="col-4 contact-icon">
+								<a href="https://drive.google.com/file/d/1yRemWQHzYU08e/view?usp=sharing" target="_blank">
+									<img id="resume-icon" src="images/resume.svg">
+								</a>
+							</div>
+							<div class="col-4 contact-icon">
+								<a href="mailto:ajaydeshmukhinr@gmail.com" target="_blank">
+									<i class="fas fa-envelope"></i>
+								</a>
+							</div>
+							<div class="col-4 contact-icon">
+								<a href="https://www.linkedin.com/in/ajayieh/" target="_blank">
+									<i class="icon fab fa-linkedin"></i>
+								</a>
+							</div>
+							<div class="col-4 contact-icon">
+								<a href="https://www.instagram.com/ashet.it/" target="_blank">
+									<i class="icon fab fa-instagram"></i>
+								</a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="col" id="main-content">
+						<div class="row main-content-element" id="about">
+							<h2>Hi, I'm Ajay <span class="wave">👋🏻</span></h2>
+							<p>Currently, I'm final year grad in Information Technology from the <a href="https://sggs.ac.in/">Shri Guru Gobind Singhji Institute of Engineering and Technology</a>. Prior to this, I was working as a User Experience, and a Project Engineer with <a href="https://futurereadytalent.in/">Microsoft Future Ready</a>. <br><br>
+							My industry experience lies in developing large-scale, automated, production-grade systems.
+							For research, I'm building linux command line tool for open ports, transfer scanned & vulnerabilties through URLs adaptation under <a href="https://scholar.google.com/citations?user=coYnjwIAAAAJ&hl=en">Dr. Pritam Gaj Kumar Shah</a>.</p>
+							<br/>
+							<br/>
+							<div class="row" id="hobbies">
+								<div class="col-7">
+									<p id="internship-about"><b>I’m actively looking for an internship for Fall'22. </b></p>
+								</div>
+								<div class="col-1">
+
+								</div>
+								<div class="col-4">
+									<h3>Hobbies</h3>
+									<div class="row">
+										<div class="col hobby-icon"><span class="hobby-helper"></span><img src="icons/hobbies/books.svg" width="50"></div>
+										<div class="col hobby-icon"><span class="hobby-helper"></span><img src="icons/hobbies/cooking.svg" width="50"></div>
+										<div class="col hobby-icon"><span class="hobby-helper"></span><img src="icons/hobbies/music.svg" width="50"></div>
+										<div class="col hobby-icon"><span class="hobby-helper"></span><img src="icons/hobbies/traveling.svg" width="50"></div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+
+						<div class="row main-content-element justify-content-center" id="experience">
+							<h1>Experience</h1>
+							<div class="col-10 content-box">
+								<div class="row">
+									<div class="col-2 logo-container">
+										<img class="logo-img" src="images/sistrm.png">
+									</div>
+									<div class="col info-container">
+										<div class="row">
+											<div class="col company-name"><h4>Society for Innovation in Scientific, Technological and Medical Research (SISTRM) Australia</h4></div>
+											<div class="col-4"><h5>Jan 2022 - March 2022</h5></div>
+										</div>
+										<h5>Cyber Security Engineer - Intern</h5>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-2 logo-container">
+										<img class="logo-img" id="company-logo" src="images/microsoft.png">
+									</div>
+									<div class="col info-container">
+										<div class="row">
+											<div class="col company-name"><h4>Microsoft</h4></div>
+											<div class="col-4"><h5>Sept 2021 - Dec 2021</h5></div>
+										</div>
+										<h5>Microsoft Future Ready - Intern</h5>
+										<!-- <p>I worked on . Utilising .NET, .NET Core, React, Angular 2+, SQL Server.</p> -->
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-2 logo-container">
+										<img class="logo-img" id="company-logo" src="images/glassdoor.png">
+									</div>
+									<div class="col info-container">
+										<div class="row">
+											<div class="col company-name"><h4>Glassdoor</h4></div>
+											<div class="col-4"><h5>June 2020 - July 2020</h5></div>
+										</div>
+										<h5>Data Visualisation - Intern</h5>
+										<!-- <p>I worked on . Utilising .NET, .NET Core, React, Angular 2+, SQL Server.</p> -->
+									</div>
+									<br><br>
+									<h6 style="text-align:right">Details of the projects in resume</h6>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="row main-content-element justify-content-center" id="education">
+							<h1>Education</h1>
+							<div class="col-10 content-box">
+								<div class="row">
+									<div class="col-2">
+										<div class="logo-container">
+											<img class="logo-img last-logo" src="images/sggs.png">
+										</div>
+									</div>
+									<div class="col info-container">
+										<div class="row">
+											<div class="col company-name"><h4>Shri Guru Gobind Singhji Institute of Engineering and Technology, Nanded</h4></div>
+											<div class="col-4"><h5>Aug 2018 - July 2022</h5></div>
+										</div>
+										<h5>Bachelors of Techonology in Information Technology</h5>
+										<li>Thesis: Network detection in the URL using Computer Networks</li>
+										<li>Relevant courses:  Machine Learning, Artificial Intelligence, Data Mining, Information Retrieval, Data Structures & Algorithms, Operating Systems</li>
+
+										<!-- <p>* - ongoing</p> -->
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-2">
+										<div class="logo-container last-logo">
+											<img class="logo-img" src="images/gk-college.png">
+										</div>
+									</div>
+									<div class="col info-container last-container">
+										<div class="row">
+											<div class="col company-name"><h4>GK Jr. College</h4></div>
+											<div class="col-4"><h5>July 2016 - May 2017</h5></div>
+										</div>
+										<h5>High School</h5>
+										<p>Higher Secondary Certification (HSC)</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- <div class="row main-content-element" id="projects">
+							<h1>Projects</h1>
+						</div> -->
+
+						<!-- ICONS: https://worldvectorlogo.com/ -->
+						<div class="row main-content-element" id="skills">
+							<h1>Skills</h1>
+							<div class="container" id="skills-container">
+								<div class="row">
+									<div class="col-2">
+											<img src="icons/python-icon.svg" height="65">
+										<p>Python</p>
+									</div>
+									<div class="col-2">
+										<img src="icons/cpp-icon.svg" height="65">
+										<p>C++</p> 
+									</div>
+									<div class="col-2">
+										<img src="icons/html-icon.svg" height="65">
+										<p>HTML</p>
+									</div>
+									<div class="col-2">
+										<img src="icons/javascript-icon.svg" height="65">
+										<p>JavaScript</p>
+									</div>
+									<div class="col-2">
+										<img src="icons/sql-database-icon.svg" height="65">
+										<p>SQL</p>
+									</div>
+									<div class="col-2">
+										<img src="icons/mongodb-icon.svg" height="65">
+										<p>MongoDB</p>
+									</div>
+									<div class="col-2">
+										<img src="icons/google-cloud-icon.svg" height="65">
+										<p>Google Cloud</p>
+									</div>
+									<div class="col-2">
+										<img src="icons/azure-icon.svg" height="65">
+										<p>Microsoft Azure</p>
+									</div>
+									<div class="col-2">
+										<img src="icons/git-icon.svg" height="65">
+										<p>Git</p>
+									</div>
+									<div class="col-2">
+										<img src="icons/linux-icon.svg" height="65">
+										<p>LINUX</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row main-content-element" id="achievements">
+							<h1>Achievements</h1>
+							<div class="container">
+								<div class="row">
+									<div class="col-9 achievement-title"><b>Top 6% performer, Indian Army Cybersecurity Hackathon</b></div>
+									<div class="col-3 achievement-date">Feb 2022</div>
+								</div>
+								<div class="row achievement-content">
+									<p>Amplified in the level 3+ challenge finalists among selected 75+ out of 35000+ participants.</p>
+								</div>
+							</div>
+							<div class="container">
+								<div class="row">
+									<div class="col-9 achievement-title"><b>Gift box and recognition badge, Google Cloud</b></div>
+									<div class="col-3 achievement-date">Oct 2021</div>
+								</div>
+								<div class="row achievement-content">
+									<p>Performed 30+ days challenges in a Google cloud competition.</p>
+								</div>
+							</div>
+							<div class="container">
+								<div class="row">
+									<div class="col-9 achievement-title"><b>Mentor Badge and Amazon gift voucher, Internshala</b></div>
+									<div class="col-3 achievement-date">Jan 2021</div>
+								</div>
+								<div class="row achievement-content">
+									<p>Ranked 71st position out of 21557+ participants in the Internshala Student Partner..</p>
+								</div>
+							</div>
+							<div class="container">
+								<div class="row">
+									<div class="col-9 achievement-title"><b> Prime Minister's Scholarship Scheme (PMSS), Kendriya Sainik Board, Govt. of India</b></div>
+									<div class="col-3 achievement-date">Mar 2019</div>
+								</div>
+								<div class="row achievement-content">
+									<p>Top 6.2% - All India Rank 746 from over 12,000+ candidates.</p>
+								</div>
+							</div>
+							<div class="container">
+								<div class="row">
+									<div class="col-9 achievement-title"><b> Chess Tournament, School Level</b></div>
+									<div class="col-3 achievement-date">Mar 2015</div>
+								</div>
+								<div class="row achievement-content">
+									<p>Winner - Third Position.</p>
+								</div>
+							</div>
+						</div>
+				</div>
+			</div>
+
+
+	<!-------- <div class="row" id="footer">
+				<h1>CONTACT</h1>
+				<div class="row justify-content-center">
+					<div class="col-2">
+						<a href="https://www.linkedin.com/in/ajayieh/">
+							<div class="footer-icon-container" id="linkedin">
+								<i class="icon fab fa-linkedin"></i>
+							</div>
+							<p>Linkedin</p>
+						</a>
+					</div>
+					<div class="row justify-content-center">
+					<div class="col-2">
+						<a href="https://www.github.com/ajay-deshmukh/">
+							<div class="footer-icon-container" id="github">
+								<i class="icon fab fa-github"></i>
+							</div>
+							<p>GitHub</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		----------->
+
+
+			<div class="row" id="copyright">
+				<div class="col-2"><!-- <img src="https://visitor-badge.glitch.me/badge?page_id=ajay-deshmukh/ajay-deshmukh.github.io" alt="Views" style="width:5%;"/> --></div>
+				<div class="col-8">Made with <span id="love">❤️</span> by <span id="footer-name">Ajay Deshmukh </span></div>
+				<div class="col-2"><p>Last updated: May, 2022</p></div>
+			</div>
+
+			<div class="views">
+    		<!-- <span class="views"> -->
+      		<!-- <img src="https://profile-counter.glitch.me/ajaydeshmukh.github.io/count.svg" alt="Views"/> -->
+    		<!-- </span> -->
+			</div>
 		</div>
-	</div>
 
-	<!--------- FOOTER ------------->
-	<footer>
-        <div class="footer-content">
-            <ul class="socials">
-            	<li title="GitHub"><a href="https://github.com/ajay-deshmukh/" target="_blanck"><i class="fab fa-github"></i></a></li>
-            	
-            	<li title="LinkedIn"><a href="https://www.linkedin.com/in/ajayieh" target="_blanck"><i class="fab fa-linkedin"></i></a></li>
+<!----- JavaScript --------->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
+	<script type="text/javascript" src='js/main.js'></script>
 
-                <li title="e-mail"><a href="mailto:ajaydeshmukhieh@gmail.com" target="_blanck"><i class="fas fa-envelope"></i></a></li>
-           </ul>
-        </div>
-    </footer>
-</main>
-
-<!--------- SCRIPTS ------------->
-<script type="text/javascript" src="./components/js/index.js"></script>
 </body>
 </html>
