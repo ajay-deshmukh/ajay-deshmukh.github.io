@@ -310,9 +310,9 @@ a:hover{
 
 /*  footer sizer  */
 #copyright{
-	background-color: #fccc5b;
+	background-color: ivory !important;
 	font-weight: bold;
-	color: whitesmoke;
+	color: black;
 	text-align: center;
 	padding: 2vh;
 }
