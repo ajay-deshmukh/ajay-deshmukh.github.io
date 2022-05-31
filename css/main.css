@@ -23,7 +23,7 @@ a:hover{
 
 #landing-container{
 	height: 100vh;
-	background: url(../images/landing.gif);
+	background: url(../assets/images/landing.gif);
 	color: white;
 	z-index: 10;
 /*	text-shadow: 4px 4px grey;*/
